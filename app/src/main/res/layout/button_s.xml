@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#4A148C"
+        android:drawableLeft="@drawable/ic_telegram"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/mono_regular"
+        android:text="Button_1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_btn1"
+        android:text="button2"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_btn2"
+        android:text="button3"
+        android:textColor="#7F0993" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/back_btn3"
+        android:text="button4"
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_btn4"
+        android:text="button5"
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_btn5"
+        android:text="button6"
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_btn6"
+        android:drawableRight="@drawable/ic_right_circle"
+        android:drawablePadding="-25dp"
+        android:paddingHorizontal="15dp"
+        android:text="button7"
+        android:textColor="#9332AE" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:drawableRight="@drawable/ic_baseline_loop_24"
+        android:text="button8"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back_shape_of_parallelogram"
+        android:text="Ok" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_btn7"
+        android:text="Ok" />
+
+    <View
+        android:background="@drawable/back_btn8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#36C7FF"
+        app:layout_constraintBottom_toTopOf="@id/container2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container1" />
+
+    <ImageView
+        android:id="@+id/iconOfSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logOfUser"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="2dp"
+        android:src="@drawable/image_smile"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconOfSettings"
+        app:layout_constraintWidth_percent="0.28"
+        app:shapeAppearanceOverlay="@style/myCustomStyleForShapeableImagesCorner50percent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="4dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Honglu Yan"
+        android:textColor="#F0FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/logOfUser"
+        app:layout_constraintRight_toRightOf="@id/logOfUser"
+        app:layout_constraintTop_toBottomOf="@id/logOfUser" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Beijing, China"
+        android:textColor="#ADFFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/logOfUser"
+        app:layout_constraintRight_toRightOf="@id/logOfUser"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:outlineAmbientShadowColor="#36C7FF"
+        android:outlineSpotShadowColor="#36C7FF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toTopOf="@id/container2"
+        app:layout_constraintTop_toTopOf="@id/container2" />
+
+    <TextView
+        android:id="@+id/textOfPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:elevation="30dp"
+        android:text="Photos"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/countOfPhotos"
+        app:layout_constraintLeft_toLeftOf="@id/cardContainer"
+        app:layout_constraintRight_toLeftOf="@id/textOfFollowers"
+        app:layout_constraintTop_toTopOf="@id/cardContainer"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textOfFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:text="Followers"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/textOfPhotos"
+        app:layout_constraintRight_toLeftOf="@id/textOfFollowing"
+        app:layout_constraintTop_toTopOf="@id/textOfPhotos" />
+
+    <TextView
+        android:id="@+id/textOfFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:text="Following"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/textOfFollowers"
+        app:layout_constraintRight_toRightOf="@id/cardContainer"
+        app:layout_constraintTop_toTopOf="@id/textOfPhotos" />
+
+
+    <TextView
+        android:id="@+id/countOfPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:fontFamily="@font/mono_bold"
+        android:text="376"
+        android:textColor="#36C7FF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/cardContainer"
+        app:layout_constraintLeft_toLeftOf="@id/textOfPhotos"
+        app:layout_constraintTop_toBottomOf="@id/textOfPhotos" />
+
+    <TextView
+        android:id="@+id/countOfFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:fontFamily="@font/mono_bold"
+        android:text="1769"
+        android:textColor="#7c7c7c"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/textOfFollowers"
+        app:layout_constraintTop_toTopOf="@id/countOfPhotos" />
+
+    <TextView
+        android:id="@+id/countOfFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:fontFamily="@font/mono_bold"
+        android:text="127"
+        android:textColor="#7C7C7C"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/textOfFollowing"
+        app:layout_constraintTop_toTopOf="@id/countOfPhotos" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardContainer"
+        app:shapeAppearanceOverlay="@style/myCustomStyleForCorner10Images"
+        app:srcCompat="@drawable/camera" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

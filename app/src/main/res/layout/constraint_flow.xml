@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    View larni satr yoki ustunga ketma ket joylashib, qator to'lganda keyingi ustun yoki satrga avtomatik tarzda o'tib ketishini hohlasak Flow lardan foydalanamiz -->
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="viewBox1,viewBox2,viewBox3,viewBox4,viewBox5,viewBox6,viewBox7"
+        app:flow_horizontalGap="5dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalGap="5dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewBox1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@color/black" />
+
+    <View
+        android:id="@+id/viewBox2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@color/purple_200" />
+
+    <View
+        android:id="@+id/viewBox3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#F44336" />
+
+    <View
+        android:id="@+id/viewBox4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#9C27B0" />
+
+    <View
+        android:id="@+id/viewBox5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#FFEB3B" />
+
+    <View
+        android:id="@+id/viewBox6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#4CAF50" />
+
+    <View
+        android:id="@+id/viewBox7"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#009688" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

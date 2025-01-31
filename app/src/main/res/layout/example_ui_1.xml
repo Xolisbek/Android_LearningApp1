@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/firstBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/back_example_ui_1_first_container"
+        app:layout_constraintBottom_toTopOf="@id/secondBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <View
+        android:id="@+id/secondBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/thirdBox"
+        app:layout_constraintTop_toBottomOf="@id/firstBox"
+        app:layout_constraintVertical_weight="0.77" />
+
+    <View
+        android:id="@+id/thirdBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#E7F7F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondBox"
+        app:layout_constraintVertical_weight="1.05" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/mono_bold"
+        android:text="Jonathon Patricson"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="UI/UX Designer | Front End Developer"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullName" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Comilla, Bangladesh"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintBottom_toBottomOf="@id/location"
+        app:layout_constraintRight_toLeftOf="@id/location"
+        app:layout_constraintTop_toTopOf="@id/location" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/personImage"
+        style="@style/imagesStyles"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jonathon"
+        app:layout_constraintBottom_toTopOf="@id/secondBox"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/secondBox"
+        app:layout_constraintWidth_percent="0.4"
+        app:shapeAppearanceOverlay="@style/myCustomStyleForShapeableImagesCorner50percent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/personImageBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:barrierMargin="20dp"
+        app:constraint_referenced_ids="personImage" />
+
+    <TextView
+        android:id="@+id/countOfApplications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2332"
+        android:textColor="#1E96C8"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/countOfFollowers"
+        app:layout_constraintTop_toBottomOf="@id/personImageBarrier" />
+
+    <TextView
+        android:id="@+id/countOfFollowers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="732"
+        android:textColor="#1E96C8"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/countOfApplications"
+        app:layout_constraintRight_toLeftOf="@id/countOfFollowing"
+        app:layout_constraintTop_toBottomOf="@id/personImageBarrier" />
+
+    <TextView
+        android:id="@+id/countOfFollowing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="332"
+        android:textColor="#1E96C8"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/countOfFollowers"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/personImageBarrier" />
+
+    <TextView
+        android:id="@+id/textApplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applications"
+        android:textColor="#494848"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/countOfApplications"
+        app:layout_constraintRight_toRightOf="@id/countOfApplications"
+        app:layout_constraintTop_toBottomOf="@id/countOfApplications" />
+
+    <TextView
+        android:id="@+id/textFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:textColor="#494848"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/countOfFollowers"
+        app:layout_constraintRight_toRightOf="@id/countOfFollowers"
+        app:layout_constraintTop_toBottomOf="@id/countOfFollowers" />
+
+    <TextView
+        android:id="@+id/textFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        android:textColor="#494848"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/countOfFollowing"
+        app:layout_constraintRight_toRightOf="@id/countOfFollowing"
+        app:layout_constraintTop_toBottomOf="@id/countOfFollowing" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line"
+        app:layout_constraintLeft_toLeftOf="@id/countOfApplications"
+        app:layout_constraintRight_toRightOf="@id/countOfApplications"
+        app:layout_constraintTop_toBottomOf="@id/textApplication" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line"
+        app:layout_constraintLeft_toLeftOf="@id/countOfFollowers"
+        app:layout_constraintRight_toRightOf="@id/countOfFollowers"
+        app:layout_constraintTop_toBottomOf="@id/textFollowers" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line"
+        app:layout_constraintLeft_toLeftOf="@id/countOfFollowing"
+        app:layout_constraintRight_toRightOf="@id/countOfFollowing"
+        app:layout_constraintTop_toBottomOf="@id/textApplication" />
+
+    <TextView
+        android:id="@+id/titleAboutJonathon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="About Jonathon"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/thirdBox" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/titleAboutJonathon"
+        app:layout_constraintTop_toBottomOf="@id/titleAboutJonathon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using."
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/titleAboutJonathon" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back_btn_follow"
+        android:text="Follow"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

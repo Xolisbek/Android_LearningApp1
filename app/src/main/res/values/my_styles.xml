@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="myCustomStyleForShapeableImagesCorner50percent" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="myCustomStyleForCorner10Images" parent="">
+        <item name="cornerSize">10%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="imagesStyles" parent="">
+        <item name="strokeWidth">6dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="strokeColor">@color/white</item>
+    </style>
+
+    <style name="myCustomRadioBtnStyle" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/back_radio_button</item>
+        <item name="android:button">@drawable/custom_radio_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">-50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:buttonTint">#004643</item>
+    </style>
+
+    <style name="myBtnStyle" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:background">@drawable/back_next_btn</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+
+</resources>

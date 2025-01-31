@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    View larni bitta view ning atrofida aylana bo'ylab ko'rsatilgan view dan ma'lum masofada va  ma'lum burchak ostida joylashtrishni hohlasak quyidagicha foydalanamiz -->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBox1_c"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBox2_c"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/purple_200"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@+id/viewBox1_c"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBox3_c"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#F44336"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@id/viewBox1_c"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBox4_c"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#9C27B0"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@id/viewBox1_c"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBox5_c"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FFEB3B"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@id/viewBox1_c"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBox6_c"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#4CAF50"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@id/viewBox1_c"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBox7_c"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#3F51B5"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@id/viewBox1_c"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#1D4901"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@id/viewBox1_c"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#A7FFEB"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintCircle="@id/viewBox1_c"
+        app:layout_constraintCircleAngle="315"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

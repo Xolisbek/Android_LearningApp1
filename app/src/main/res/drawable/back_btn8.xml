@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape
+            android:innerRadius="10dp"
+            android:shape="ring"
+            android:thickness="1dp"
+            android:useLevel="false">
+            <solid android:color="#3F51B5" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:innerRadius="20dp"
+            android:shape="ring"
+            android:thickness="1dp"
+            android:useLevel="false">
+            <solid android:color="#F44336" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:innerRadius="30dp"
+            android:shape="ring"
+            android:thickness="1dp"
+            android:useLevel="false">
+            <solid android:color="#F44336" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:innerRadius="40dp"
+            android:shape="ring"
+            android:thickness="1dp"
+            android:useLevel="false">
+            <solid android:color="#F44336" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:innerRadius="50dp"
+            android:shape="ring"
+            android:thickness="1dp"
+            android:useLevel="false">
+            <solid android:color="#F44336" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="line"
+            android:useLevel="false">
+            <stroke
+                android:width="2dp"
+                android:color="#E91E63" />
+        </shape>
+    </item>
+    <item>
+        <rotate android:fromDegrees="45">
+            <shape
+                android:shape="line"
+                android:useLevel="false">
+                <stroke
+                    android:width="2dp"
+                    android:color="#E91E63"
+                    android:dashWidth="1dp"
+                    android:dashGap="2dp" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate android:fromDegrees="-45">
+            <shape
+                android:shape="line"
+                android:useLevel="false">
+                <stroke
+                    android:width="2dp"
+                    android:color="#E91E63"
+                    android:dashWidth="1dp"
+                    android:dashGap="2dp" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate android:fromDegrees="-90">
+            <shape
+                android:shape="line"
+                android:useLevel="false">
+                <stroke
+                    android:width="2dp"
+                    android:color="#E91E63" />
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

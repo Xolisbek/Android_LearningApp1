@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <inset android:drawable="@drawable/ic_check_circle_solid" android:insetLeft="20dp" />
+    </item>
+    <item android:state_checked="false">
+        <inset android:drawable="@drawable/ic_circle_regular" android:insetLeft="20dp" />
+    </item>
+</selector>

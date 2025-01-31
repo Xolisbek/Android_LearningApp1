@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57848484"
+    tools:context=".TestApp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapperOfQuestionSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/back_question_view"
+            android:elevation="20dp"
+            android:gravity="left"
+            android:lineHeight="30dp"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="15dp"
+            android:text="Bu yergaaaaaaaaaaaaaaa Savol yoziladi ?"
+            android:textSize="25sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:elevation="30dp"
+            android:indeterminateOnly="false"
+            android:progress="40"
+            android:progressDrawable="@drawable/back_progress_bar"
+            android:rotation="-90"
+            app:layout_constraintBottom_toTopOf="@id/question"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/question" />
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="31dp"
+            android:fontFamily="@font/mono_bold"
+            android:text="4"
+            android:textColor="#004643"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@id/progressBar"
+            app:layout_constraintLeft_toLeftOf="@+id/progressBar"
+            app:layout_constraintRight_toRightOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@id/progressBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/wrapperOfAnswerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp">
+
+            <RadioButton
+                android:id="@+id/variantA"
+                style="@style/myCustomRadioBtnStyle"
+                android:text="A" />
+
+            <RadioButton
+                android:id="@+id/variantB"
+                style="@style/myCustomRadioBtnStyle"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/variantC"
+                style="@style/myCustomRadioBtnStyle"
+                android:text="C" />
+
+            <RadioButton
+                android:id="@+id/variantD"
+                style="@style/myCustomRadioBtnStyle"
+                android:text="D" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            style="@style/myBtnStyle"
+            android:text="Next" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/back_question_view"
+        android:gravity="center"
+        android:minHeight="150dp"
+        android:text="15 dan 10 si to'g'ri"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/replayBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/replayBtn"
+        style="@style/myBtnStyle"
+        android:text="Replay"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
